@@ -1,0 +1,165 @@
+# 🎯 AI TOOLS BLOG REVENUE MACHINE - WINDSURF RULES
+
+## PROJECT CONTEXT
+```yaml
+Business Goal: €2000+/month from AI tools blog
+Target Audience: French entrepreneurs 25-45 years
+Tech Stack: Next.js 14 + TypeScript + Tailwind + Express + MongoDB
+Revenue: Subscriptions (€14/month) + Affiliates + Sponsored content
+Markets: France, Germany, Spain, USA
+```
+
+## CORE PRINCIPLES
+
+### 🏗️ Architecture
+- **Clean Architecture**: UI → Business Logic → Data → Infrastructure
+- **Component Pattern**: Composition over inheritance, TypeScript-first
+- **Performance**: Core Web Vitals 90+, bundle <250KB
+- **Security**: Input validation, output sanitization, auth checks
+- **Accessibility**: WCAG 2.1 AA, semantic HTML
+- **SEO**: Meta tags, structured data, hreflang
+
+### 💼 Business Focus
+- **Revenue**: Every feature contributes to €2000/month goal
+- **Conversion**: Trust signals, clear CTAs, social proof
+- **A/B Testing**: Component variant support
+- **Analytics**: User journey and revenue tracking
+- **Multi-language**: DeepL translation workflow
+- **Mobile-First**: 60%+ mobile traffic
+
+## CODE RULES
+
+### 🎨 Components
+```typescript
+import React, { memo } from 'react';
+import type { ComponentProps } from '@/types';
+
+interface Props extends ComponentProps {
+  // Strict typing
+}
+
+const Component = memo<Props>(({ ...props }) => {
+  return (
+    <div className="component-wrapper" data-testid="component">
+      {/* Accessible JSX */}
+    </div>
+  );
+});
+
+Component.displayName = 'Component';
+export default Component;
+export type { Props as ComponentProps };
+```
+
+### 🔒 Security
+- **Validation**: Zod schemas for all inputs
+- **Auth**: JWT with refresh rotation
+- **Roles**: free/premium/admin
+- **API**: Rate limiting, CORS, helmet
+- **Data**: GDPR compliance, encryption
+
+### ⚡ Performance
+- **Optimization**: Code splitting, tree shaking, lazy loading
+- **Images**: next/image with WebP, lazy loading
+- **Caching**: Redis for API, CDN for static
+- **Database**: MongoDB with indexing, query optimization
+- **Monitoring**: Performance tracking, error reporting
+
+## BUSINESS LOGIC
+
+### 💰 Revenue
+- **Subscriptions**: Stripe with webhooks
+- **Affiliates**: Click tracking, conversion attribution
+- **Content**: Premium paywall, exclusive access
+- **Email**: Automated sequences, segmentation
+- **Analytics**: Revenue attribution, churn prediction
+
+### 🌍 Multi-Language
+- **Routing**: /[locale]/ with next-intl
+- **Content**: Automated translation + human review
+- **SEO**: hreflang tags, localized meta
+- **Pricing**: Market-specific currencies
+- **Legal**: GDPR, market-specific terms
+
+### 📊 Analytics
+- **Events**: Views, clicks, submissions, purchases
+- **Attribution**: Source tracking, conversion paths
+- **Performance**: Core Web Vitals, error rates
+- **KPIs**: MRR, churn rate, CAC, conversion rates
+
+## WORKFLOW
+
+### 🛠️ Process
+1. **Review**: Check analytics, plan priorities
+2. **Develop**: @mention for context, TDD approach
+3. **Review**: Security, performance, business impact
+4. **Test**: 80%+ coverage, critical path testing
+5. **Deploy**: Staging validation, production monitoring
+
+### 📝 Commits
+```
+feat(subscription): add stripe webhook for failed payments
+fix(auth): resolve jwt refresh race condition
+perf(blog): optimize article loading
+```
+
+### 🧪 Testing
+- **Unit**: Jest + RTL, 80%+ coverage
+- **Integration**: API endpoints with Supertest
+- **E2E**: Playwright for critical journeys
+- **Performance**: Lighthouse CI
+- **Security**: OWASP testing, dependency scanning
+
+## ERROR HANDLING
+
+### 🐛 Debug Process
+1. **Identify**: Error type, impact, reproduction
+2. **Analyze**: Root cause, dependencies
+3. **Fix**: Minimal change, comprehensive testing
+4. **Document**: Update knowledge base
+
+### 🚨 Error Boundaries
+- **Component**: Graceful degradation with fallbacks
+- **API**: Retry logic, timeout handling
+- **Business**: Transaction rollback, data consistency
+- **Monitoring**: Real-time alerts, impact analysis
+
+## TARGETS
+
+### 📈 Technical
+- **Load**: First Contentful Paint < 1.5s
+- **Performance**: Lighthouse > 90
+- **Accessibility**: WCAG 2.1 AA
+- **SEO**: Core Web Vitals all green
+- **Security**: Zero critical vulnerabilities
+
+### 💹 Business
+- **Revenue**: €2000+/month
+- **Conversion**: 15%+ email signup
+- **Retention**: 60%+ monthly
+- **Growth**: 20% MoM users
+- **Efficiency**: 40%+ development velocity
+
+## COMMANDS
+
+### 🚀 Shortcuts
+- `@rules:component` - Generate component
+- `@rules:api` - Create API endpoint
+- `@rules:test` - Generate test suite
+- `@rules:optimize` - Performance review
+- `@rules:security` - Security check
+
+### 📋 Templates
+- **Landing**: Conversion-optimized with A/B testing
+- **Blog**: SEO-optimized with affiliates
+- **Dashboard**: Analytics and revenue tracking
+- **Auth**: Complete authentication system
+- **Payment**: Stripe subscription handling
+
+## ACTIVATION
+
+- **"Apply business rules"** - Revenue focus
+- **"Follow performance standards"** - Optimization
+- **"Implement security best practices"** - Security
+- **"Create conversion-optimized component"** - Marketing
+- **"Build multi-language feature"** - International
